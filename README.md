@@ -61,7 +61,7 @@ This project implements an end-to-end web-based system for automated crack detec
 
 ##  Use Case Diagram
 
-![Use Case Diagram](images/secasediagram.drawio.jpg)
+![Use Case Diagram](images/usecase.drawio.png)
 
 - **Actors:** Admin, Client
 - **Major Use Cases:**
