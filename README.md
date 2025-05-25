@@ -169,7 +169,16 @@ source venv/bin/activate # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
 python app.py
 ```
+### Docker Deployment (Optional)
 
+```dockerfile
+FROM python:3.8-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+EXPOSE 8000
+CMD ["python", "app.py"]
 
 ---
 
