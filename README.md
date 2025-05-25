@@ -117,7 +117,6 @@ The Deep Crack system significantly outperforms existing methodologies[8]:
 - Responsive web design with modern HTML5/CSS3/JavaScript
 - Interactive visualization of prediction results
 - Comprehensive user management with role-based access control
-- 
 ##  Workflow
 
 1. **User Registration/Login:** Users create accounts and log in.
