@@ -130,11 +130,11 @@ python app.py
 ├── database.db
 ```
 
-## 🔧 Model Optimization: INT8 Quantization
+##  Model Optimization: INT8 Quantization
 
 Our Deep Crack system implements advanced INT8 quantization to optimize the MobileNet-based crack detection model for real-world deployment.
 
-### 📊 Quantization Results
+###  Quantization Results
 
 | Model Version | Size | Compression Ratio | Accuracy Impact |
 |---------------|------|-------------------|-----------------|
@@ -143,7 +143,7 @@ Our Deep Crack system implements advanced INT8 quantization to optimize the Mobi
 | **INT8 Quantized** | 42.30 MB | 4.0x | 1-3% loss |
 | **INT8 + Gzip** | ~15 MB | 11x+ | 1-3% loss |
 
-### ⚡ Performance Benefits
+###  Performance Benefits
 
 - **75% Size Reduction**: From 169MB to 42MB
 - **4x Faster Inference**: Integer operations vs floating-point
