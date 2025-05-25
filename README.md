@@ -171,7 +171,8 @@ python app.py
 ```
 ### Docker Deployment (Optional)
 
-```dockerfile
+```
+dockerfile
 FROM python:3.8-slim
 WORKDIR /app
 COPY requirements.txt .
@@ -180,6 +181,7 @@ COPY . .
 EXPOSE 8000
 CMD ["python", "app.py"]
 
+```
 ---
 
 ##  Model Highlights
@@ -203,8 +205,8 @@ CMD ["python", "app.py"]
 │ ├── user/
 │ └── admin/
 ├── database.db
-
 ```
+
 
 ##  Model Optimization: INT8 Quantization
 
