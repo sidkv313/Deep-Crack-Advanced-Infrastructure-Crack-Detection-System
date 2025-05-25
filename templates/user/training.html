@@ -1,0 +1,13 @@
+{% extends "user/userbase.html" %}
+
+
+{% block content %}
+<div class="split-container">
+    <div class="left-side"></div>
+    <div class="right-side">
+        <h1>Training Results</h1>
+        <p>Final Loss: {{ loss }}</p>
+        <p>Final Accuracy: {{ accuracy }}</p>
+    </div>
+</div>
+{% endblock %}

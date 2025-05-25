@@ -1,0 +1,15 @@
+
+{% extends "user/userbase.html" %}
+{% block content %}
+<div class="split-container">
+    <div class="left-side"></div>
+    <div class="right-side">
+        <div class="prediction-result">
+            <h1>Prediction Result</h1>
+            <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+            <p>Predicted Class: {{ label }}</p>
+            <a href="{{ url_for('upload_file') }}">Upload another image</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

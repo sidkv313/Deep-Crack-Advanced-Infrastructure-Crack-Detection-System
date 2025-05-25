@@ -1,0 +1,49 @@
+{% extends "user/userbase.html" %}
+
+
+{% block content %}
+<style>
+    .split-container {
+        display: flex;
+        height: 100vh; /* Full viewport height */
+    }
+    .split-container .left-side {
+        flex: 1;
+        background-image: url('{{ url_for('static', filename='dani.jpg') }}');
+        background-size: cover;
+        background-position: center;
+    }
+    .split-container .right-side {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .upload-form h1 {
+        margin-bottom: 20px;
+    }
+    .upload-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .upload-form input[type="file"] {
+        margin-bottom: 20px;
+    }
+</style>
+
+<div class="split-container">
+    <div class="left-side"></div>
+    <div class="right-side">
+        <div class="upload-form">
+            <h1>Upload Image for Crack Detection</h1>
+            <form method="post" enctype="multipart/form-data">
+                <input type="file" name="file">
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
