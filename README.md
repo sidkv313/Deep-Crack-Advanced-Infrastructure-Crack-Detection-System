@@ -23,7 +23,33 @@ This project implements an end-to-end web-based system for automated crack detec
 
 ## System Architecture
 
-![System Architecture](https://pplx-res.cloudinary.com/image/private/user_uploads/54085632/37224ed3-103a-4109-8154-208f83cff255/System_Architecture.jpg)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    Client Interface Layer                   │
+├─────────────────────────────────────────────────────────────┤
+│           Flask Web Application Framework                   │
+│  ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐│
+│  │  Authentication │ │   File Upload   │ │  Visualization  ││
+│  │     Module      │ │    Handler      │ │    Engine       ││
+│  └─────────────────┘ └─────────────────┘ └─────────────────┘│
+├─────────────────────────────────────────────────────────────┤
+│              Image Processing Pipeline                      │
+│  ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐│
+│  │ Preprocessing   │ │  Feature        │ │  Classification ││
+│  │    Module       │ │  Extraction     │ │    Engine       ││
+│  └─────────────────┘ └─────────────────┘ └─────────────────┘│
+├─────────────────────────────────────────────────────────────┤
+│            Machine Learning Infrastructure                  │
+│  ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐│
+│  │   MobileNet     │ │   TensorFlow    │ │   Model         ││
+│  │  Architecture   │ │    Backend      │ │  Persistence    ││
+│  └─────────────────┘ └─────────────────┘ └─────────────────┘│
+├─────────────────────────────────────────────────────────────┤
+│                Data Persistence Layer                       │
+│           SQLite Database with User Management              │
+└─────────────────────────────────────────────────────────────┘
+```
 
 - **Frontend:** HTML/CSS/JS for user interaction.
 - **Flask Server:** Handles routing, business logic, and API endpoints.
@@ -35,7 +61,7 @@ This project implements an end-to-end web-based system for automated crack detec
 
 ##  Use Case Diagram
 
-![Use Case Diagram](https://pplx-res.cloudinary.com/image/private/user_uploads/54085632/d6d536aa-30c2-403a-9ede-d843ab0a93fc/usecasediagram.drawio.jpg)
+![Use Case Diagram](images/secasediagram.drawio.jpg)
 
 - **Actors:** Admin, Client
 - **Major Use Cases:**
