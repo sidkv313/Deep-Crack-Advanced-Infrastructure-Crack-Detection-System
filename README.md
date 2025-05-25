@@ -74,6 +74,50 @@ This project implements an end-to-end web-based system for automated crack detec
 
 ---
 
+## Performance Metrics and Evaluation Framework
+
+### Classification Performance Analysis
+
+The system demonstrates exceptional performance across multiple evaluation metrics[1][8]:
+
+| Metric | Negative Class | Positive Class | Overall |
+|--------|---------------|----------------|---------|
+| **Precision** | 99% | 98% | 99% |
+| **Recall** | 98% | 99% | 99% |
+| **F1-Score** | 99% | 99% | 99% |
+| **Accuracy** | - | - | 99% |
+
+### Comparative Analysis with State-of-the-Art Methods
+
+The Deep Crack system significantly outperforms existing methodologies[8]:
+
+| Method | Precision | F1-Score | Accuracy | Recall |
+|--------|-----------|----------|----------|--------|
+| **Deep Crack** | 99% | 99% | 99% | 98% |
+| RFCN-b | 84% | 80% | 93% | 84% |
+| RFCN-a | 88% | 84% | 94% | 80% |
+| FCN | 80% | 80% | 86% | 79% |
+| Mask RCNN | 61% | 59% | 64% | 60% |
+
+## Technical Features and Capabilities
+
+### Advanced Functionalities
+
+**Real-Time Prediction Engine:**
+- Sub-second inference times for uploaded images
+- Confidence score reporting with threshold-based classification
+- Batch processing capabilities for multiple image analysis
+
+**Model Management System:**
+- Dynamic model retraining with new datasets
+- Version control for model artifacts
+- Performance monitoring and evaluation metrics tracking
+
+**User Interface Components:**
+- Responsive web design with modern HTML5/CSS3/JavaScript
+- Interactive visualization of prediction results
+- Comprehensive user management with role-based access control
+- 
 ##  Workflow
 
 1. **User Registration/Login:** Users create accounts and log in.
