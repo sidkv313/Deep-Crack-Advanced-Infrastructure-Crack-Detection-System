@@ -130,5 +130,9 @@ python app.py
 ├── database.db
 ```
 
+## CONCLUSION
+
+
+In conclusion, the proposed MobileNet-based model demonstrated outstanding performance in classifying the images by underscoring its effectiveness for our specific task. Future work could involve fine-tuning the model on specific subsets of data to further enhance its accuracy by addressing the challenges posed by similar-looking features. Additionally, exploring advanced transfer learning techniques or experimenting with more sophisticated architectures holds promise for achieving even better results in diverse real-world scenarios.
 
 
